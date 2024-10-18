@@ -5,12 +5,13 @@ ________________________________________
 Install Python
 1.	Download Python:
 •	Visit the official Python website and download the latest stable version (preferably Python 3.9 or later).
+https://www.python.org/downloads/
 
-2.	Install Python:
+3.	Install Python:
 •	Run the installer and follow the prompts.
 •	Important: During installation, check the box that says “Add Python to PATH”.
 
-3.	Verify Installation:
+4.	Verify Installation:
 •	Open your terminal (Command Prompt on Windows, Terminal on macOS/Linux).
 •	Run in cmd / terminal: python --version
 
@@ -24,11 +25,12 @@ Install Visual Studio Code
 Install Git
 1.	Download Git:
 •	Visit the Git website and download the installer for your OS.
+https://git-scm.com/downloads
 
-2.	Install Git:
+3.	Install Git:
 •	Run the installer and follow the prompts.
 
-3.	Verify Installation:
+4.	Verify Installation:
 •	Open your terminal and run: git --version
 ________________________________________
 Install Django
