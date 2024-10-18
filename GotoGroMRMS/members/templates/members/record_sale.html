@@ -1,0 +1,26 @@
+<!-- record_sale.html -->
+{% extends "members/base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="container">
+
+    <form method="POST">
+
+        {% csrf_token %}
+        <label for="item_name">Item name:</label>
+        <input type="text" name="item_name" id="item_name" required><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="purchase_quantity" id="purchase_quantity" min="1" required><br>
+
+        <label for="total_price">Total Price:</label>
+        <input type="number" name="total_price" id="total_price" step="0.01" required><br>
+
+        <button type="submit">Submit Purchase</button>
+    </form>
+
+    <a href="{% url 'sales_history' %}" class="btn btn-danger">Back</a>
+</div>
+{% endblock %}

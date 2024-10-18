@@ -1,0 +1,19 @@
+<!-- members/template/members/register.html-->
+
+{% extends "members/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    
+    <h2>Register</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <a href="{% url 'home' %}" class="btn btn-danger">Back</a>
+    </form>
+
+</div>
+{% endblock %}
